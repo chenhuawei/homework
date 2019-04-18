@@ -31,12 +31,9 @@ int removeItem(SqList * list, ElemType * ptr) {
     if (offset < 0 || offset > end) {
         return -1;
     }
-    if (end - offset > sizeof(ElemType)) {
-        do {
-            memmove(ptr, ptr + sizeof(ElemType), sizeof(ElemType));
-            ptr += sizeof(ElemType);
-        } while (ptr < list->elem + end);
-
+    while (ptr < list->elem + end) {
+        memmove(ptr, ptr + sizeof(ElemType), sizeof(ElemType));
+        ptr += sizeof(ElemType);
     }
     list->length --;
     return 0;
