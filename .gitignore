@@ -1,0 +1,12 @@
+# IntelliJ
+*.iml
+*.ipr
+.idea
+
+# OS files
+.DS_Store
+*/.DS_Store
+
+cmake-build-debug
+
+*.tar.gz
