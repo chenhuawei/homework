@@ -5,3 +5,5 @@ set(CMAKE_C_STANDARD 99)
 
 add_executable(sqlist sqlist/main.c)
 add_executable(linklist linklist/main.c)
+add_executable(sqstack stack/main.c)
+add_executable(conversion conversion/main.c)
