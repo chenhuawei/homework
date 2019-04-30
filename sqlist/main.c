@@ -65,7 +65,7 @@ int main() {
     SqList * sqListPtr = &sqList;
     ElemType * item;
     ElemType data;
-    int max = 10;
+    int max = 13;
     int index;
 
     initSqList(sqListPtr, max);
